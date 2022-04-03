@@ -1,0 +1,11 @@
+
+/* VARIABLES */
+:root{
+    --abyss: rgb(34, 34, 34);
+}
+
+/* BASE COMPONENTS */
+body{
+    background-color: var(--abyss);
+    /* background:linear-gradient(to bottom, black, rgb(19, 50, 65)); */
+}

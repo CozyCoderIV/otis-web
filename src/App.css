@@ -1,38 +1,226 @@
-.App {
-  text-align: center;
+/* VARIABLES */
+:root{
+    --mainColor: rgb(196, 253, 255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* COMPONENTS */
+.App{
+
+}
+.App >*{
+    position: relative;
+    bottom: 10px;
+    margin-left: 0.5ch;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Main Container */
+.main-container{
+    border-radius: 1vw;
+    height: 60em;
+
+    background: linear-gradient(to bottom, black, rgb(19, 50, 65));
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.925);
+}
+.main-container >*{
+    margin-left: 2ch;
+    position: relative;
+    top: 5ch;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* HEADER */
+.Header{
+    height: 27ch;
+    width: 97%;
+
+    /* background-color: aqua; */
 }
 
-.App-link {
-  color: #61dafb;
+.nav-bar{
+    height: 7.5ch;
+    width: 96%;
+    display: grid;
+
+    position: fixed;
+    top: 16px;
+    left: 30px;
+
+    background: linear-gradient(to right, rgb(9, 12, 14), rgb(3, 33, 46));
+
+    border: 1px solid rgb(8, 80, 109);;
+    border-radius: 1vw;
+
+    z-index: 3; /* specific layer */
+}
+.n-title{
+    font-family: 'Supermercado One', cursive;
+    font-weight: 600;
+    color: var(--mainColor);
+
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    position: relative;
+    left: 1ch;
+    bottom: 5px;
+
+    text-shadow: 0px 0px 10px  white;
+}
+.n-nav{
+    grid-row: 1;
+    grid-column-start: 6;
+    grid-column-end: 9;
+
+    position: relative;
+    top: 8px;
+    right: 8px;
+
+    height: 6ch;
+    display: flex;
+    /* background-color: aliceblue; */
+}
+.n-nav >* {
+    font-family: 'Supermercado One', cursive;
+    font-weight: 200;
+    color: rgb(196, 238, 240);
+    
+    position: relative;
+    top: 8px;
+
+
+    height: 25px;
+    margin-left: 10px;
+
+    border: 1px solid rgb(8, 80, 109);
+    border-radius: 1vw;
+    background-color: rgb(42, 52, 54);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.418);
+    padding-top: 5px;
+}
+.n-item:hover{
+    background-color: rgb(22, 32, 32);
+}
+.n-item >*{
+    position: relative;
+    top: -15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.welcome-container{
+    margin-top: 1ch;
+    /* background-color: red; */
+}
+.welcome-banner{
+    height: 10ch;
+    width: 100%;
+
+    position: relative;
+    top: 6ch;
+
+    background-color: rgb(249, 250, 250);
+
+}
+.welcome-paragraph{
+    margin-top: 7.5ch;
+    position: relative;
+    left: 1ch;
+
+    color: var(--mainColor);
+    border-radius: 1vw;
+    background: rgba(42, 57, 58, 0.589);
+}
+.w-para{
+    font-family: 'Supermercado One', cursive;
+    font-weight: 200;
+    color: var(--mainColor);
+}
+.w-box{
+    position: relative;
+    top: 3px;
+
+    height: 74px;
+    background: linear-gradient(to right, rgb(20, 26, 31), rgb(5, 48, 66));
+}
+.w-prompt{
+    position: relative;
+    top: 20px;
+    left: 20px;
+
+    font-family: 'Supermercado One', cursive;
+    font-weight: 600;
+    color: var(--mainColor);
+
+    text-shadow: 0px 0px 2px  white;
+}
+
+
+/* BODY A */
+.bodyA-container{
+    height: 35ch;
+    width: 97%;
+
+    /* margin-bottom: 2ch; */
+
+    background-color: rgb(255, 0, 106);
+}
+.a-container{
+    position: relative;
+    top: 5px;
+    left: 15px;
+
+    width: 95%;
+    height: 35ch;
+
+    /* background: rgb(243, 227, 86); */
+    background: rgb(110, 1, 47);
+
+    z-index: 1;
+}
+.aa-container{
+
+}
+.aa-title-box{
+    position: relative;
+    top: 1ch;
+    left: 1ch;
+
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 1vw;
+
+    background-color: aliceblue;
+}
+.aa-title{
+    position: relative;
+    top: -13px;
+}
+
+.aa-content-box{
+
+}
+.aa-content-1{
+
+}
+.aa-content-2{
+
+}
+
+/* BODY B */
+.bodyB-container{
+    height: 20ch;
+    width: 15ch;
+
+    margin-bottom: 2ch;
+
+    background-color: rgb(172, 2, 214);
+}
+
+
+/* FOOTER */
+.footer-container{
+    height: 20ch;
+    width: 15ch;
+
+    background-color: rgb(55, 0, 255);
 }

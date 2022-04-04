@@ -16,7 +16,7 @@
 /* Main Container */
 .main-container{
     border-radius: 1vw;
-    height: 60em;
+    height: 140em;
 
     background: linear-gradient(to bottom, black, rgb(19, 50, 65));
     box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.925);
@@ -42,11 +42,11 @@
 
     position: fixed;
     top: 16px;
-    left: 30px;
+    left: 16px;
 
     background: linear-gradient(to right, rgb(9, 12, 14), rgb(3, 33, 46));
 
-    border: 1px solid rgb(8, 80, 109);;
+    border: 1px solid rgb(8, 80, 109);
     border-radius: 1vw;
 
     z-index: 3; /* specific layer */
@@ -64,7 +64,8 @@
     left: 1ch;
     bottom: 5px;
 
-    text-shadow: 0px 0px 10px  white;
+    /* text-shadow: 0px 0px 10px white; */
+    text-shadow: 0px 0px 15px rgb(47, 110, 146);
 }
 .n-nav{
     grid-row: 1;
@@ -104,7 +105,6 @@
     position: relative;
     top: -15px;
 }
-
 
 .welcome-container{
     margin-top: 1ch;
@@ -154,73 +154,240 @@
 }
 
 
+
+
 /* BODY A */
 .bodyA-container{
-    height: 35ch;
+    height: 70ch;
     width: 97%;
-
-    /* margin-bottom: 2ch; */
-
-    background-color: rgb(255, 0, 106);
 }
 .a-container{
     position: relative;
     top: 5px;
     left: 15px;
 
-    width: 95%;
-    height: 35ch;
+    width: 98%;
+    height: 60ch;
+
+    border-radius: 1vw;
+    border: 1px solid rgb(8, 8, 8);
+    box-shadow: 0px 0px 15px 2px rgb(30, 69, 92);
+    
+    background: rgb(12, 24, 29);
 
     /* background: rgb(243, 227, 86); */
-    background: rgb(110, 1, 47);
-
     z-index: 1;
 }
 .aa-container{
-
-}
-.aa-title-box{
     position: relative;
     top: 1ch;
     left: 1ch;
 
+    width: 98.7%;
+    height: 96%;
+    border-radius: 1vw;
+    border: 1px solid rgb(16, 79, 104);
+    background-color: rgb(29, 32, 32);
+}
+.aa-title-box{
+    position: relative;
+    top: -1ch;
+    left: 1ch;
+
     width: 200px;
-    height: 30px;
+    height: 50px;
     border: 1px solid black;
     border-radius: 1vw;
 
-    background-color: aliceblue;
+    /* border: 1px solid rgb(8, 80, 109); */
+    border: 1px solid white;
+    background: linear-gradient(to right, rgb(9, 12, 14), rgb(3, 33, 46));
 }
 .aa-title{
     position: relative;
-    top: -13px;
+    top: -9px;
+    left: 2px;
+
+    font-family: 'Supermercado One', cursive;
+    font-weight: 600;
+    color: var(--mainColor);
+
+    text-shadow: 0px 0px 8px rgb(30, 69, 92);
+
 }
 
 .aa-content-box{
+    position: relative;
+    top: 5ch;
+    left: 2ch;
 
+    width: 97%;
+    height: 42ch;
+    display: flex;
+
+    border-radius: 1vw;
+    background-color: rgb(23, 27, 27);
 }
+
 .aa-content-1{
+    position: relative;
+    top: .5ch;
+    left: .3ch;
 
+    width: 70%;
+    height: 98%;
+    display: grid;
+
+    margin-right: 1ch;
+    border-radius: 1vw;
+
+    background-color: rgb(18, 18, 20);
 }
+.aa-list{
+    list-style: upper-roman;
+    color: var(--mainColor);
+}
+.aa-list-item{
+    margin-top: 1ch;
+    width: 85%;
+    height: 7ch;
+
+    background-color: rgb(26, 100, 143);
+}
+.aa-list-item >*{
+    position: relative;
+    /* top: -2ch; */
+
+    font-family: 'Supermercado One', cursive;
+    font-weight: 600;
+    color: var(--mainColor);
+
+    text-shadow: 0px 0px 6px rgb(30, 69, 92);
+}
+
 .aa-content-2{
+    position: relative;
+    top: .5ch;
+    left: -.5ch;
 
+    width: 30%;
+    height: 98%;
+    display: grid;
+
+    border-radius: 1vw;
+
+    background-color: rgb(18, 18, 20);
 }
+.aa-img-container{
+    position: relative;
+    top: 1ch;
+    left: 2ch;
+
+    width: 200px;
+    height: 200px;
+
+    background: rgb(133, 130, 130);
+    border: 1px solid whitesmoke;
+    border-radius: 150px;
+    box-shadow: 0px 0px 10px 2px rgb(141, 151, 156);
+}
+
+
+
+
+
 
 /* BODY B */
 .bodyB-container{
-    height: 20ch;
-    width: 15ch;
+    height: 70ch;
+    width: 97%;
 
     margin-bottom: 2ch;
-
     background-color: rgb(172, 2, 214);
 }
+
+.b-container{
+    position: relative;
+    top: 1ch;
+    left: 1ch;
+
+    width: 98.7%;
+    height: 68ch;
+    border-radius: 1vw;
+    border: 1px solid black;
+    background-color: rgb(12, 24, 29);
+}
+.bb-container{
+    position: relative;
+    top: 1ch;
+    left: 1ch;
+
+    width: 98.7%;
+    height: 66ch;
+    border-radius: 1vw;
+    border: 1px solid black;
+    background-color: rgb(29, 32, 32);
+}
+.bb-title-box{
+    position: relative;
+    top: -1ch;
+    left: 1ch;
+
+    width: 45ch;
+    height: 50px;
+    border-radius: 1vw;
+    border: 1px solid white;
+    background: linear-gradient(to right, rgb(9, 12, 14), rgb(3, 33, 46));
+}
+.bb-title{
+    position: relative;
+    top: -9px;
+    left: 5px;
+
+    font-family: 'Supermercado One', cursive;
+    font-weight: 600;
+    color: var(--mainColor);
+
+    text-shadow: 0px 0px 8px rgb(30, 69, 92);
+}
+
+.bb-content-box{
+    position: relative;
+    top: 2ch;
+    left: 2ch;
+
+    width: 97%;
+    height: 55ch;
+
+    border-radius: 1vw;
+    background: rgb(23, 27, 27);
+}
+
+.bb-content-1{}
+.bb-content-1-title-box{}
+.bb-content-2{}
+.bb-content-3{}
+
+
 
 
 /* FOOTER */
 .footer-container{
-    height: 20ch;
-    width: 15ch;
+    height: 70ch;
+    width: 97%;
 
     background-color: rgb(55, 0, 255);
 }
+.c-container{}
+.cc-container{}
+.cc-title-box{}
+.cc-title{}
+
+.cc-content-box{}
+.cc-content-1{}
+.cc-content-1-title-box{}
+.cc-content-1-title{}
+
+.cc-contnet-2{}
+.cc-content-2-title-box{}
+.cc-content-2-title{}

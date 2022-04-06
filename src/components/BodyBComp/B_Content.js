@@ -11,7 +11,17 @@ function B_Content() {
         </div>
 
         <div className='bb-content-box'>
-          
+
+          <div className='bb-content-1'>
+            <div className='bb-content-1-title-box'>
+              <h4 className='bb-content-1-title'>Otis R. Jackson IV</h4>
+            </div>
+          </div>
+         
+
+          <div className='bb-content-2'></div>
+
+          <div className='bb-content-3'></div>
         </div>
 
       </div>

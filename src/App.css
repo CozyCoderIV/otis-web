@@ -42,7 +42,7 @@
 
     position: fixed;
     top: 16px;
-    left: 16px;
+    left: 25px;
 
     background: linear-gradient(to right, rgb(9, 12, 14), rgb(3, 33, 46));
 
@@ -158,7 +158,7 @@
 
 /* BODY A */
 .bodyA-container{
-    height: 70ch;
+    height: 79ch;
     width: 97%;
 }
 .a-container{
@@ -167,7 +167,7 @@
     left: 15px;
 
     width: 98%;
-    height: 60ch;
+    height: 72ch;
 
     border-radius: 1vw;
     border: 1px solid rgb(8, 8, 8);
@@ -216,13 +216,47 @@
 
 }
 
+.aa-content-box2{
+    /* background: rgb(170, 223, 26); */
+    border-radius: 1vw;
+    display: grid;
+
+    height: 20px;
+
+    position: relative;
+    top: 1ch;
+    left: -9ch;
+}
+.imgA-box{
+    position: relative;
+    bottom: 17ch;
+
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+
+    /* background-color: royalblue; */
+    border-radius: 1vw;
+
+    grid-row: 1;
+    grid-column-start: 9;
+    grid-column-end: 11;
+}
+.imgA{
+    object-fit: cover;
+    
+    width: 100%;
+    height: 100%;
+}
+
+
 .aa-content-box{
     position: relative;
     top: 5ch;
     left: 2ch;
 
     width: 97%;
-    height: 42ch;
+    height: 53ch;
     display: flex;
 
     border-radius: 1vw;
@@ -252,6 +286,7 @@
     width: 85%;
     height: 7ch;
 
+    border-radius: 1vw;
     background-color: rgb(26, 100, 143);
 }
 .aa-list-item >*{
@@ -291,6 +326,19 @@
     border-radius: 150px;
     box-shadow: 0px 0px 10px 2px rgb(141, 151, 156);
 }
+.aa-img{
+    position: relative;
+    top: -4.7ch;
+    right: 2ch;
+    width: 254px;
+    height: 254px;
+    object-fit: cover;
+}
+
+.aa-img-container2{
+
+}
+.aa-img2{}
 
 
 
@@ -299,11 +347,11 @@
 
 /* BODY B */
 .bodyB-container{
-    height: 70ch;
+    height: 95ch;
     width: 97%;
 
     margin-bottom: 2ch;
-    background-color: rgb(172, 2, 214);
+    /* background-color: rgb(172, 2, 214); */
 }
 
 .b-container{
@@ -312,10 +360,11 @@
     left: 1ch;
 
     width: 98.7%;
-    height: 68ch;
+    height: 90ch;
     border-radius: 1vw;
     border: 1px solid black;
     background-color: rgb(12, 24, 29);
+    box-shadow: 0px 0px 15px 2px rgb(30, 69, 92);
 }
 .bb-container{
     position: relative;
@@ -323,9 +372,9 @@
     left: 1ch;
 
     width: 98.7%;
-    height: 66ch;
+    height: 85ch;
     border-radius: 1vw;
-    border: 1px solid black;
+    border: 1px solid rgb(16, 79, 104);
     background-color: rgb(29, 32, 32);
 }
 .bb-title-box{
@@ -334,7 +383,7 @@
     left: 1ch;
 
     width: 45ch;
-    height: 50px;
+    height: 60px;
     border-radius: 1vw;
     border: 1px solid white;
     background: linear-gradient(to right, rgb(9, 12, 14), rgb(3, 33, 46));
@@ -355,18 +404,85 @@
     position: relative;
     top: 2ch;
     left: 2ch;
+    display: grid;
 
     width: 97%;
-    height: 55ch;
+    height: 73ch;
 
     border-radius: 1vw;
     background: rgb(23, 27, 27);
 }
 
-.bb-content-1{}
-.bb-content-1-title-box{}
-.bb-content-2{}
-.bb-content-3{}
+.bb-content-1{
+    position: relative;
+    top: 2ch;
+    left: 1ch;
+
+    width: 100%;
+    height: 110%;
+
+    border-radius: 1vw; 
+    border: 1px solid rgb(16, 79, 104);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: rgb(18, 18, 20);
+    box-shadow: 0px 0px 15px 2px rgb(30, 69, 92);
+}
+.bb-content-1-title-box{
+    position: relative;
+    left: 1ch;
+    top: 1ch;
+
+    width: 70%;
+    height: 20px;
+
+    border-radius: 1vw;
+    background: rgb(38, 68, 77);
+    border: 1px solid white;
+}
+.bb-content-1-title{
+    position: relative;
+    top: -18px;
+    left: 3px;
+    color: var(--mainColor);
+
+}
+.bb-img-container{}
+.bb-img{}
+
+.bb-content-2{
+    position: relative;
+    top: 2ch;
+    left: 2ch;
+
+    width: 95%;
+    height: 110%;
+
+    border-radius: 1vw;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+
+    background-color: rgb(18, 18, 20);
+}
+.bb-content-3{
+    position: relative;
+    top: -3ch;
+    left: 1ch;
+
+    width: 98%;
+    height: 110%;
+
+    border-radius: 1vw;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    background-color: rgb(18, 18, 20);
+}
 
 
 
@@ -376,7 +492,7 @@
     height: 70ch;
     width: 97%;
 
-    background-color: rgb(55, 0, 255);
+    background-color: rgb(43, 42, 46);
 }
 .c-container{}
 .cc-container{}

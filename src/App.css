@@ -16,7 +16,7 @@
 /* Main Container */
 .main-container{
     border-radius: 1vw;
-    height: 140em;
+    height: 160em;
 
     background: linear-gradient(to bottom, black, rgb(19, 50, 65));
     box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.925);
@@ -103,7 +103,7 @@
 }
 .n-item >*{
     position: relative;
-    top: -15px;
+    top: 0px;
 }
 
 .welcome-container{
@@ -215,6 +215,10 @@
     text-shadow: 0px 0px 8px rgb(30, 69, 92);
 
 }
+.aa-title:hover{
+    color: rgb(226, 239, 247);
+    text-shadow: 0px 0px 8px rgb(246, 249, 252);
+}
 
 .aa-content-box2{
     /* background: rgb(170, 223, 26); */
@@ -229,7 +233,8 @@
 }
 .imgA-box{
     position: relative;
-    bottom: 17ch;
+    right: 9ch;
+    bottom: 2ch;
 
     height: 300px;
     width: 300px;
@@ -245,8 +250,8 @@
 .imgA{
     object-fit: cover;
     
-    width: 100%;
-    height: 100%;
+    width: 150%;
+    height: 150%;
 }
 
 
@@ -274,6 +279,7 @@
 
     margin-right: 1ch;
     border-radius: 1vw;
+    border: 1px solid whitesmoke;
 
     background-color: rgb(18, 18, 20);
 }
@@ -287,7 +293,8 @@
     height: 7ch;
 
     border-radius: 1vw;
-    background-color: rgb(26, 100, 143);
+    border: 1px solid black;
+    /* background-color: rgb(26, 100, 143); */
 }
 .aa-list-item >*{
     position: relative;
@@ -299,6 +306,11 @@
 
     text-shadow: 0px 0px 6px rgb(30, 69, 92);
 }
+.aa-list-item >*:hover{
+    color: rgb(226, 239, 247);
+    text-shadow: 0px 0px 8px rgb(246, 249, 252);
+}
+
 
 .aa-content-2{
     position: relative;
@@ -310,8 +322,9 @@
     display: grid;
 
     border-radius: 1vw;
-
-    background-color: rgb(18, 18, 20);
+    border: 1px solid whitesmoke;
+    background: radial-gradient(circle, rgb(16, 32, 34), rgb(18, 38, 39), rgb(8, 90, 138), black);
+    /* background-color: rgb(18, 18, 20); */
 }
 .aa-img-container{
     position: relative;
@@ -335,10 +348,6 @@
     object-fit: cover;
 }
 
-.aa-img-container2{
-
-}
-.aa-img2{}
 
 
 
@@ -347,7 +356,7 @@
 
 /* BODY B */
 .bodyB-container{
-    height: 95ch;
+    height: 125ch;
     width: 97%;
 
     margin-bottom: 2ch;
@@ -360,7 +369,7 @@
     left: 1ch;
 
     width: 98.7%;
-    height: 90ch;
+    height: 115ch;
     border-radius: 1vw;
     border: 1px solid black;
     background-color: rgb(12, 24, 29);
@@ -372,10 +381,11 @@
     left: 1ch;
 
     width: 98.7%;
-    height: 85ch;
+    height: 110ch;
     border-radius: 1vw;
     border: 1px solid rgb(16, 79, 104);
-    background-color: rgb(29, 32, 32);
+    background-color: rgb(23, 27, 27);
+    /* background-color: rgb(29, 32, 32); */
 }
 .bb-title-box{
     position: relative;
@@ -383,7 +393,7 @@
     left: 1ch;
 
     width: 45ch;
-    height: 60px;
+    height: 50px;
     border-radius: 1vw;
     border: 1px solid white;
     background: linear-gradient(to right, rgb(9, 12, 14), rgb(3, 33, 46));
@@ -399,15 +409,19 @@
 
     text-shadow: 0px 0px 8px rgb(30, 69, 92);
 }
+.bb-title:hover{
+    color: rgb(226, 239, 247);
+    text-shadow: 0px 0px 8px rgb(246, 249, 252);
+}
 
 .bb-content-box{
     position: relative;
-    top: 2ch;
+    top: 1ch;
     left: 2ch;
     display: grid;
 
     width: 97%;
-    height: 73ch;
+    height: 78ch;
 
     border-radius: 1vw;
     background: rgb(23, 27, 27);
@@ -415,20 +429,21 @@
 
 .bb-content-1{
     position: relative;
-    top: 2ch;
+    top: 1ch;
     left: 1ch;
 
-    width: 100%;
+    width: 80%;
     height: 110%;
 
     border-radius: 1vw; 
-    border: 1px solid rgb(16, 79, 104);
+    border: 1px solid rgb(236, 246, 250);
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 5;
-    background-color: rgb(18, 18, 20);
-    box-shadow: 0px 0px 15px 2px rgb(30, 69, 92);
+    background: radial-gradient(circle, rgb(174, 225, 233), rgb(18, 38, 39), black);
+    /* box-shadow: 0px 0px 15px 2px rgb(30, 69, 92); */
+    box-shadow: 0px 0px 15px 2px rgba(221, 231, 236, 0.596);
 }
 .bb-content-1-title-box{
     position: relative;
@@ -439,42 +454,169 @@
     height: 20px;
 
     border-radius: 1vw;
-    background: rgb(38, 68, 77);
+    background: rgb(9, 16, 19);
     border: 1px solid white;
+    box-shadow: 0px 0px 15px 2px rgba(2, 14, 22, 0.603);
+
+    /* z-index: 1; */
+
 }
 .bb-content-1-title{
     position: relative;
     top: -18px;
     left: 3px;
+
+    font-family: 'Supermercado One', cursive;
+    font-weight: 200;
+
     color: var(--mainColor);
+    /* z-index: 1; */
 
 }
-.bb-img-container{}
-.bb-img{}
+
+.bb-content-box-img{
+    position: relative;
+    left: 1ch;
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+}
+.bb-img-container{
+    position: relative;
+    top: 2ch;
+    left: 1ch;
+
+    width: 90%;
+    height: 360px;
+
+    /* background: gray; */
+    border-radius: 1vw;
+
+    display: grid;
+    margin-bottom: -50ch;
+}
+.bb-img{
+    position: relative;
+    top: -1ch;
+    right: 4ch;
+
+    grid-row: 1;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 380px;
+    height: 380px;
+}
+
 
 .bb-content-2{
     position: relative;
-    top: 2ch;
-    left: 2ch;
+    top: 1ch;
+    left: -5ch;
 
-    width: 95%;
+    width: 103%;
     height: 110%;
 
     border-radius: 1vw;
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 5;
 
     background-color: rgb(18, 18, 20);
+
+    display: grid;
+}
+.bb-Acon{
+    position: relative;
+    background: red;
+
+    border-radius: 1vw;
+    border: 1px solid whitesmoke;
+}
+.bb-Bcon{
+    position: relative;
+    background: blue;
+
+    border-radius: 1vw;
+    border: 1px solid whitesmoke;
+}
+.b-description{
+    position: relative;
+    left: 2ch;
+    top: -2ch;
+
+    width: 35%;
+    background-color: black;
+}
+.bb-Ccon{
+    position: relative;
+    background: green;
+
+    border-radius: 1vw;
+    border: 1px solid whitesmoke;
+}
+.bb-list{
+    list-style: upper-roman;
+}
+.bb-list-itemA{
+    position: relative;
+
+    margin-top: 1ch;
+    width: 85%;
+    height: 7ch;
+
+    border-radius: 1vw;
+    /* border: 1px solid rgb(250, 250, 250); */
+
+    font-family: 'Supermercado One', cursive;
+    font-weight: 200;
+
+    color: var(--mainColor);
+}
+.bb-list-itemB{
+    position: relative;
+    top: 10ch;
+
+    margin-top: 1ch;
+    width: 85%;
+    height: 7ch;
+
+    border-radius: 1vw;
+    /* border: 1px solid rgb(252, 251, 251); */
+
+    font-family: 'Supermercado One', cursive;
+    font-weight: 200;
+
+    color: var(--mainColor);
+}
+.bb-list-itemC{
+    position: relative;
+    top: 20ch;
+
+    margin-top: 1ch;
+    width: 85%;
+    height: 7ch;
+
+    border-radius: 1vw;
+    /* border: 1px solid rgb(248, 243, 243); */
+
+    font-family: 'Supermercado One', cursive;
+    font-weight: 200;
+
+    color: var(--mainColor);
+}
+
+.project-title:hover{
+    color: rgb(226, 239, 247);
+    text-shadow: 0px 0px 8px rgb(246, 249, 252);
 }
 .bb-content-3{
     position: relative;
-    top: -3ch;
+    top: 3ch;
     left: 1ch;
 
     width: 98%;
-    height: 110%;
+    height: 230%;
 
     border-radius: 1vw;
     grid-column-start: 1;
@@ -492,10 +634,29 @@
     height: 70ch;
     width: 97%;
 
-    background-color: rgb(43, 42, 46);
+    /* background-color: rgb(43, 42, 46); */
 }
-.c-container{}
-.cc-container{}
+.c-container{
+    position: relative;
+    top: 1ch;
+    left: 1ch;
+
+    height: 50ch;
+
+    border: 1px solid black;
+    border-radius: 1vw;
+}
+.cc-container{
+    position: relative;
+    top: 0ch;
+    left: 0ch;
+
+    width: 98.7%;
+    height: 90%;
+
+    border: 1px solid rgb(248, 246, 246);
+    border-radius: 1vw;
+}
 .cc-title-box{}
 .cc-title{}
 
@@ -504,6 +665,6 @@
 .cc-content-1-title-box{}
 .cc-content-1-title{}
 
-.cc-contnet-2{}
+.cc-content-2{}
 .cc-content-2-title-box{}
 .cc-content-2-title{}

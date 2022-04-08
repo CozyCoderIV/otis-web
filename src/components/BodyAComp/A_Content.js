@@ -11,18 +11,6 @@ function A_Content() {
         <div className='aa-title-box'> 
           <h2 className='aa-title'><i>Who is Otis IV ??</i></h2>
         </div>
-        
-     
-
-        {/* <div className='icon-box'>
-          <img className='icon' src='media/WebpageLogo_edited.png' alt=''></img>
-        </div> */}
-
-        <div className='aa-content-box2'>
-          <div className="imgA-box">
-            <img src={`${img1}`} alt='image' style={{width: '100%', height: '100%'}} className="imgA" />
-          </div>
-        </div>
 
 
         <div className='aa-content-box'>
@@ -53,8 +41,8 @@ function A_Content() {
           </div>
 
           <div className='aa-content-2'>
-            <div className='aa-img-container'>
-            <img src={`${img2}`} alt='image' className="aa-img" />
+            <div className="imgA-box">
+              <img src={`${img1}`} alt='image' className="imgA" />
             </div>
           </div>
 

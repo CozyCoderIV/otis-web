@@ -10,16 +10,16 @@ function Nav() {
       
       <div className='n-nav'>
         <div className='n-item'>
-              <p>About Me</p>
+              <a>About Me</a>
           </div>
           <div className='n-item'>
-            <p>Projects/Experience</p>
+            <a>Projects/Experience</a>
           </div>
           <div className='n-item'>
-            <p>Contacts</p>
+            <a>Contacts</a>
           </div>
           <div className='n-item'>
-            <p>Extras</p>
+            <a>Extras</a>
           </div>
       </div>
 

@@ -528,17 +528,17 @@
 }
 .bb-Acon{
     position: relative;
-    background: red;
+    /* background: red; */
 
     border-radius: 1vw;
-    border: 1px solid whitesmoke;
+    /* border: 1px solid whitesmoke; */
 }
 .bb-Bcon{
     position: relative;
-    background: blue;
+    /* background: blue; */
 
     border-radius: 1vw;
-    border: 1px solid whitesmoke;
+    /* border: 1px solid whitesmoke; */
 }
 .b-description{
     position: relative;
@@ -550,10 +550,10 @@
 }
 .bb-Ccon{
     position: relative;
-    background: green;
+    /* background: green; */
 
     border-radius: 1vw;
-    border: 1px solid whitesmoke;
+    /* border: 1px solid whitesmoke; */
 }
 .bb-list{
     list-style: upper-roman;
@@ -577,7 +577,7 @@
     position: relative;
     top: 10ch;
 
-    margin-top: 1ch;
+    margin-top: 1.5ch;
     width: 85%;
     height: 7ch;
 
@@ -591,7 +591,7 @@
 }
 .bb-list-itemC{
     position: relative;
-    top: 20ch;
+    top: 21ch;
 
     margin-top: 1ch;
     width: 85%;
@@ -625,13 +625,26 @@
     grid-row-end: 8;
     background-color: rgb(18, 18, 20);
 }
+.bb-attr-contain{
+    position: relative;
+    top: 1.5ch;
+    left: 2ch;
+
+    width: 60%;
+    height: 90%;
+    border-radius: 1vw;
+    background: rgb(37, 65, 83);
+
+    display: grid;
+}
+
 
 
 
 
 /* FOOTER */
 .footer-container{
-    height: 70ch;
+    height: 55ch;
     width: 97%;
 
     /* background-color: rgb(43, 42, 46); */
@@ -641,30 +654,124 @@
     top: 1ch;
     left: 1ch;
 
+    width: 98.7%;
     height: 50ch;
 
     border: 1px solid black;
     border-radius: 1vw;
+    background-color: rgb(12, 24, 29);
+    box-shadow: 0px 0px 15px 2px rgb(30, 69, 92);
 }
 .cc-container{
     position: relative;
-    top: 0ch;
-    left: 0ch;
+    top: 1ch;
+    left: 1ch;
 
     width: 98.7%;
     height: 90%;
 
-    border: 1px solid rgb(248, 246, 246);
+    border: 1px solid rgb(16, 79, 104);
+    border-radius: 1vw;
+    background: rgb(14, 17, 17);
+}
+.cc-title-box{
+    position: relative;
+    top: -1ch;
+    left: 1ch;
+    
+    width: 45ch;
+    height: 50px;
+
+    border: 1px solid whitesmoke;
+    border-radius: 1vw;
+    background: linear-gradient(to right, rgb(9, 12, 14), rgb(3, 33, 46));
+}
+.cc-title{
+    position: relative;
+    top: -9px;
+    left: 5px;
+
+    font-family: 'Supermercado One', cursive;
+    font-weight: 600;
+    color: var(--mainColor);
+
+    text-shadow: 0px 0px 8px rgb(30, 69, 92);
+}
+
+.cc-content-box{
+    position: relative;
+    top: -1ch;
+    left: 1ch;
+    width: 98.4%;
+    height: 85%;
+
+    /* background: red; */
+    border-radius: 1vw;
+    display: flex;
+
+}
+.cc-content-box >*{
+    position: relative;
+    top: 2ch;
+    left: 2ch;
+}
+.cc-content-1{
+    width: 57%;
+    height: 90%;
+    background: rgb(43, 42, 39);
+    border-radius: 1vw;
+
+    margin-right: 1ch;
+}
+.cc-content-1-title-box{
+    position: relative;
+    top: 1ch;
+    left: 1ch;
+    
+    height: 15%;
+    width: 30ch;
+    background: rgb(37, 51, 51);
+
+    border-radius: 1vw;
+    border: 1px solid whitesmoke;
+}
+.cc-content-1-title{
+    position: relative;
+    left: 2ch;
+    bottom: 5px;
+
+    font-family: 'Supermercado One', cursive;
+    font-weight: 600;
+    color: var(--mainColor);
+
+    text-shadow: 0px 0px 8px rgb(30, 69, 92);
+}
+
+.cc-content-2{
+    width: 40%;
+    height: 90%;
+    background: rgb(43, 42, 39);
     border-radius: 1vw;
 }
-.cc-title-box{}
-.cc-title{}
+.cc-content-2-title-box{
+    position: relative;
+    top: 1ch;
+    left: 1ch;
+    height: 15%;
+    width: 30ch;
+    background: rgb(37, 51, 51);
 
-.cc-content-box{}
-.cc-content-1{}
-.cc-content-1-title-box{}
-.cc-content-1-title{}
+    border-radius: 1vw;
+    border: 1px solid whitesmoke;
+}
+.cc-content-2-title{
+    position: relative;
+    left: 2ch;
+    bottom: 5px;
 
-.cc-content-2{}
-.cc-content-2-title-box{}
-.cc-content-2-title{}
+    font-family: 'Supermercado One', cursive;
+    font-weight: 600;
+    color: var(--mainColor);
+
+    text-shadow: 0px 0px 8px rgb(30, 69, 92);
+}

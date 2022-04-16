@@ -18,11 +18,12 @@ function A_Content() {
           <div className='aa-content-1'>
             <ol className='aa-list'>
               <li>
-                <div className='aa-list-item'>
+                <div className='aa-list-item' id = "title">
                   <h3>Origin Story</h3>
                 </div>
               </li>
-              <li>
+            </ol>
+              {/* <li>
                 <div className='aa-list-item'>
                   <h3>Educational Background</h3>
                 </div>
@@ -36,8 +37,7 @@ function A_Content() {
                 <div className='aa-list-item'>
                   <h3>Current Milestones</h3>
                 </div>
-              </li>
-            </ol>
+              </li> */}
           </div>
 
           <div className='aa-content-2'>

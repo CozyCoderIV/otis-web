@@ -33,23 +33,23 @@ function B_Content() {
                 <li className='bb-list-itemA'>
                   <div className='bb-Acon'>
                     <h3 className='project-title'> Galaga VII</h3>
-                    <div className='b-description'>Start Date: March 1st 2021</div>
-                    <div className='b-description'>End Date: December 27th 2021</div>
+                    <div className='b-description'>Start Date: 03/01/2021</div>
+                    <div className='b-description'>End Date: 12/27/2021</div>
                     <div className='b-description'>Language: Java</div>
                   </div>
                 </li>
                 <li className='bb-list-itemB'>
                   <div className='bb-Bcon'>
                     <h3 className='project-title'>Death_Pong</h3>
-                    <div className='b-description'>Start Date: January 18th 2022</div>
-                    <div className='b-description'>End Date: February 2nd 2022</div>
+                    <div className='b-description'>Start Date: 01/18/2022</div>
+                    <div className='b-description'>End Date: 02/02/2022</div>
                     <div className='b-description'>Language: C#</div>
                   </div>
                 </li>
                 <li className='bb-list-itemC'>
                   <div className='bb-Ccon'>
                     <h3 className='project-title'>WebPage (You Are Here)</h3>
-                    <div className='b-description'>Start Date: April 1st 2022</div>
+                    <div className='b-description'>Start Date: 04/01/2022</div>
                     <div className='b-description'>End Date: NDA</div>
                     <div className='b-description'>Language: REACT.js</div>
                   </div>
@@ -57,9 +57,18 @@ function B_Content() {
               </ol>
           </div>
 
-          {/*  */}
+          {/* 3rd Content Box */}
           <div className='bb-content-3'>
-
+              <div className='bb-attr-contain'>
+                {/* <div className='bb-attr-title'><h5><i>Javascript</i></h5></div>
+                <div className='bb-attr-title'><h5><i>Java</i></h5></div>
+                <div className='bb-attr-title'><h5><i>CSS</i></h5></div>
+                <div className='bb-attr-title'><h5><i>HTML</i></h5></div>
+                <div className='bb-attr-title'><h5><i>C#</i></h5></div>
+                <div className='bb-attr-title'><h5><i>C++</i></h5></div>
+                <div className='bb-attr-title'><h5><i>C</i></h5></div>
+                <div className='bb-attr-title'><h5><i>Python</i></h5></div> */}
+              </div>
           </div>
         </div>
 

@@ -5,6 +5,9 @@ import BodyA from './components/BodyA';
 import BodyB from './components/BodyB';
 import Footer from './components/Footer';
 
+// Body A Functionality
+
+// Body B Functionality
 function App() {
   return (
     <div className = "App">

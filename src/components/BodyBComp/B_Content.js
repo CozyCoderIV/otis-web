@@ -1,7 +1,71 @@
-import React from 'react'
+import React, {useState} from 'react'
+import ReactPlayer from 'react-player'; 
 import img1 from '../../media/Otis_anima(2 complete)_editedXXX.png'
+import galaga from '../../media/GalagaIco copy.png'
+import dp from '../../media/Death_Pong(Instruct_LR).png'
+import rd from '../../media/Rock Dodger(Icon).png'
+
+import {BiChevronsRight} from 'react-icons/bi';
+import {DiReact} from 'react-icons/di';
+
+import dataB from '../dataB';
+
 
 function B_Content() {
+  // Attributes
+  let icoList = [
+    {
+      imgA: galaga
+    },
+    {
+      imgA: dp
+    },
+    {
+      imgA: rd
+    },
+    {
+      imgA: DiReact
+    }
+  ];
+  // icoList.push(galaga);
+  // icoList.push(dp);
+
+  const[proj, setProj] = useState(0);
+  const[ico, setIco] = useState(0);
+
+  const{project, language, Sdate, Edate, clip, icon, description} = dataB[proj];
+  const{imgA} = icoList[ico];
+
+
+
+
+  // Methods
+  const checkNum = (number)=>{ 
+    if(number > dataB.length-1){
+      number = 0;
+    }
+    return number;
+  }
+  const checkIco = (number)=>{
+  }
+
+  const moveForward = ()=> {
+    setProj((index)=>{
+      let newIndex = index + 1;
+      return checkNum(newIndex);
+    })
+    setIco((index) => {
+      let newNum = index + 1;
+      if(newNum > icoList.length-1){
+        newNum = 0;
+      }
+      return newNum;
+    })
+  }
+  //  console.log(proj);
+
+
+  // Output HTML
   return (
     <div className='b-container'>
 
@@ -11,8 +75,10 @@ function B_Content() {
           <h2 className='bb-title'><i>Projects && EXP X))</i></h2>
         </div>
 
+        {/* Content Box container */}
         <div className='bb-content-box'>
 
+          {/* Img Box */}
           <div className='bb-content-1'>
 
             <div className='bb-content-1-title-box'>
@@ -27,49 +93,53 @@ function B_Content() {
 
           </div>
          
-          {/* List of Projects */}
+          {/* Project Container */}
           <div className='bb-content-2'>
-              <ol className='bb-list'>
-                <li className='bb-list-itemA'>
-                  <div className='bb-Acon'>
-                    <h3 className='project-title'> Galaga VII</h3>
-                    <div className='b-description'>Start Date: 03/01/2021</div>
-                    <div className='b-description'>End Date: 12/27/2021</div>
-                    <div className='b-description'>Language: Java</div>
-                  </div>
-                </li>
-                <li className='bb-list-itemB'>
-                  <div className='bb-Bcon'>
-                    <h3 className='project-title'>Death_Pong</h3>
-                    <div className='b-description'>Start Date: 01/18/2022</div>
-                    <div className='b-description'>End Date: 02/02/2022</div>
-                    <div className='b-description'>Language: C#</div>
-                  </div>
-                </li>
-                <li className='bb-list-itemC'>
-                  <div className='bb-Ccon'>
-                    <h3 className='project-title'>WebPage (You Are Here)</h3>
-                    <div className='b-description'>Start Date: 04/01/2022</div>
-                    <div className='b-description'>End Date: NDA</div>
-                    <div className='b-description'>Language: REACT.js</div>
-                  </div>
-                </li>
-              </ol>
+
+            {/* Project Title Box */}
+            <div id='project-box'><h2>{project}</h2></div>
+
+            {/* time box */}
+            <div className='time-box'><h2>Began: {Sdate}</h2></div>
+            <div className='time-box' id ='tb'><h2>Finished: {Edate}</h2></div>
+
+            {/* icon box */}
+            <div id='icon-box'>
+              <img src={`${imgA}`} className='icon-img'/>
+            </div>
+
+            {/* descript box */}
+            <div id='descript-box'><p id='b-text'>{description}</p></div>
+
+            {/* video box */}
+            <div id='video-box'>
+              <ReactPlayer controls width='440px' height='280px' url={clip}/>
+            </div>
+
+            {/* button */}
+            <button id='bb-btn' onClick={moveForward}>
+                <p id='btn-text'>Continue</p>
+               <BiChevronsRight id='bb-btn-logo'/>
+            </button>
           </div>
 
-          {/* 3rd Content Box */}
+          {/* Stat Content Box */}
           <div className='bb-content-3'>
-              <div className='bb-attr-contain'>
-                {/* <div className='bb-attr-title'><h5><i>Javascript</i></h5></div>
-                <div className='bb-attr-title'><h5><i>Java</i></h5></div>
-                <div className='bb-attr-title'><h5><i>CSS</i></h5></div>
-                <div className='bb-attr-title'><h5><i>HTML</i></h5></div>
-                <div className='bb-attr-title'><h5><i>C#</i></h5></div>
-                <div className='bb-attr-title'><h5><i>C++</i></h5></div>
-                <div className='bb-attr-title'><h5><i>C</i></h5></div>
-                <div className='bb-attr-title'><h5><i>Python</i></h5></div> */}
-              </div>
+
+            {/* Attribute points */}
+            <div id='attribute-box'>
+              Attributes
+              <div id=''></div>
+            </div>
+
+            {/* Attribute Chart */}
+            <div id='chart-box'>
+              Attribute Charts
+              <img id='chart'/>
+            </div>
+
           </div>
+
         </div>
 
       </div>

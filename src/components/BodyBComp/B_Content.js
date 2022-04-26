@@ -128,8 +128,18 @@ function B_Content() {
 
             {/* Attribute points */}
             <div id='attribute-box'>
-              Attributes
-              <div id=''></div>
+              <div id='attribute-c1'>c1
+                <div className='attribute-gA'>1</div>
+                <div className='attribute-gA'>2</div>
+                <div className='attribute-gA'>3</div>
+                <div className='attribute-gA'>4</div>
+              </div>
+              <div id='attribute-c2'>c2
+                <div className='attribute-gB'>1</div>
+                <div className='attribute-gB'>2</div>
+                <div className='attribute-gB'>3</div>
+                <div className='attribute-gB'>4</div>
+              </div>
             </div>
 
             {/* Attribute Chart */}

@@ -721,6 +721,32 @@ p{
     border: 1px solid white;
     border-radius: 1vw;
 
+    display: flex;
+}
+#attribute-box >*{
+    position: relative;
+    top: 2ch;
+    left: 2ch;
+}
+#attribute-c1{
+    position: relative;
+    width: 52ch;
+    height: 36ch;
+
+    /* border-radius: 1vw; */
+    border: 1px solid white;
+    color: aqua;
+    /* background: orange; */
+}
+#attribute-c2{
+    position: relative;
+    width: 52ch;
+    height: 36ch;
+
+    /* border-radius: 1vw; */
+    border: 1px solid white;
+    color: aqua;
+    /* background: greenyellow; */
 }
 #chart-box{
     position: relative;
